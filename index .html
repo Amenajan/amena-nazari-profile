@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amena Nazari - Writer Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section with Name, Profile Picture, and About Me -->
+    <header>
+        <div class="header-content">
+            <img src="images/your-photo.jpg" alt="Amena Nazari" class="profile-img">
+            <h1>Amena Nazari</h1>
+            <p class="tagline">Writer, Public Speaker, Entrepreneur</p>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate <strong>writer</strong>, <strong>public speaker</strong>, and <strong>entrepreneur</strong>, with a focus on inspiring individuals and organizations to achieve their fullest potential. Through my diverse experiences, I have honed my ability to craft compelling narratives, deliver motivational speeches, and guide others on their personal and professional journeys.</p>
+        <p>As an entrepreneur, I lead a successful business that combines my love for creativity with a deep commitment to helping others. My expertise spans across writing motivational books and articles, offering coaching, and empowering individuals to find their voice and make a meaningful impact in the world.</p>
+        <p>Whether I am sharing my own story or coaching others to tell theirs, I am driven by the belief that powerful storytelling can transform lives, inspire change, and unlock new possibilities. My mission is to help others become confident, purposeful communicators who use their words to make a difference.</p>
+    </section>
+
+    <!-- Buttons to Show More Content -->
+    <div class="buttons">
+        <button onclick="toggleSection('social-media')">See My Social Media</button>
+        <button onclick="toggleSection('books')">See My Books</button>
+        <button onclick="toggleSection('testimonials')">About SWP Language Services</button>
+    </div>
+
+    <!-- Hidden Sections for Social Media, Books, Testimonials -->
+    <!-- Social Media Section (Initially Hidden) -->
+    <section id="social-media" class="hidden">
+        <h2>Follow Me</h2>
+        <ul class="social-links">
+            <li><a href="https://www.facebook.com/share/15cQSecDkA/?mibextid=wwXIfr" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/amena.nazari.161?igsh=M3R3Znp2Zjc3cTl5&utm_source=qr" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/amena-nazari-a30309249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.tiktok.com/@amoonline?_t=ZP-8tcBz9DDOFK&_r=1" target="_blank">TikTok</a></li>
+        </ul>
+    </section>
+
+    <!-- About SWP Language Services Section (Initially Hidden) -->
+    <section id="testimonials" class="hidden">
+        <h2>About SWP Language Services</h2>
+        <p>SWP Language Services is a professional language service provider offering top-notch translation, interpretation, and localization solutions. Our team is dedicated to helping individuals and businesses bridge communication gaps and reach global audiences. Whether you're in need of document translation, website localization, or interpretation services, we are committed to delivering accurate, high-quality, and timely language solutions.</p>
+        
+        <h3>Follow SWP Language Services</h3>
+        <ul class="social-links">
+            <li><a href="https://swplanguageservices.company.site/" target="_blank">Website</a></li>
+            <li><a href="https://www.linkedin.com/in/swp-services-7a8850315" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:info@swpservice.com" target="_blank">Email</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mbldyqne" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Amena Nazari. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for toggling sections visibility -->
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            
+            // Check if the section is hidden
+            if (section.classList.contains('hidden')) {
+                // Remove the 'hidden' class to show the section
+                section.classList.remove('hidden');
+            } else {
+                // Add the 'hidden' class to hide the section
+                section.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
