@@ -1,71 +1,358 @@
-/* Reset default margin and padding */
+/* Reset margin and padding for consistency */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* General body styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lora', serif;
+    background-color: #F5F9FF; /* Light blue-gray background */
+    color: #1A237E; /* Dark navy text */
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    text-align: center;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
+/* Header Section */
 header {
-    background-color: #333;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
+    background-color: #2196F3; /* Cool blue header */
+    color: white;
     padding: 20px;
-    margin: 20px 0;
-    background-color: #fff;
+}
+
+header .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+header .tagline {
+    font-style: italic;
+    color: #ffffff; /* White text for tagline */
+}
+
+/* About Me Section */
+#about {
+    background-color: #ECEFF1; /* Soft gray background */
+    padding: 20px;
+    margin-top: 20px;
     border-radius: 8px;
 }
 
-section h2 {
-    font-size: 24px;
-    color: #444;
+#about h2 {
+    color: #2196F3; /* Blue color for the heading */
+}
+
+#about p {
+    color: #1A237E;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Hidden sections */
+.hidden {
+    display: none;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px;
+}
+/* Social Media Section */
+#social-media {
+    background-color: #ECEFF1;  /* Light background for the section */
+    padding: 30px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#social-media h2 {
+    color: #2196F3;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the list items horizontally */
+    padding: 0;
+}
+
+.social-links li {
+    margin: 0 15px; /* Space between each social media link */
+}
+
+.social-links li a {
+    color: #1A237E; /* Dark text color */
+    text-decoration: none;
+    font-size: 1.5rem;
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-item {
+    text-align: center;
+    width: 150px; /* Adjust width as needed */
+}
+
+.social-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.social-item h3 {
+    font-size: 1.1rem;
+    color: #1A237E;
+    margin: 10px 0;
+}
+
+}
+
+.social-links li a:hover {
+    color: #2196F3;  /* Change color on hover */
+}
+
+button:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
+/* Styling for the Book section */
+.book {
+    background-color: #ECEFF1;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.book img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.buy-link {
+    text-decoration: none;
+    color: #2196F3;
+    font-weight: bold;
+}
+
+.buy-link:hover {
+    text-decoration: underline;
+}
+
+/* Testimonials */
+#testimonials {
+    background-color: #ECEFF1;
+    padding: 30px 20px;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #1A237E;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #ECEFF1;
+    padding: 30px 20px;
+}
+
+.portfolio-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.view-project {
+    text-decoration: none;
+    color: #2196F3;
+    font-weight: bold;
+}
+
+.view-project:hover {
+    text-decoration: underline;
+}
+
+/* Blog Section */
+#blog {
+    background-color: #ECEFF1;
+    padding: 30px 20px;
+}
+
+.article {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article h3 {
+    font-size: 1.8rem;
+    color: #2196F3;
+}
+
+.article p {
+    font-size: 1.1rem;
+    color: #1A237E;
+    margin-top: 10px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #2196F3;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+/* Contact Form Section */
+#contact {
+    background-color: #ECEFF1;
+    padding: 30px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center; /* Center the form */
+}
+
+#contact h2 {
+    color: #2196F3;
+    margin-bottom: 30px; /* More space between heading and form */
+}
+
+/* Contact Form Section */
+#contact {
+    background-color: #ECEFF1;
+    padding: 30px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center; /* Center the text and form */
+}
+
+#contact h2 {
+    color: #2196F3;
+    margin-bottom: 30px; /* More space between heading and form */
 }
 
 #contact form {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center the form elements */
+    justify-content: center;
+    width: 100%;
+    max-width: 500px; /* Set a max-width for the form */
+    margin: 0 auto; /* Center the form on the page */
 }
 
-#contact input, #contact textarea {
+.form-group {
+    width: 100%;
     margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
-button {
-    background-color: #333;
+#contact label {
+    margin-bottom: 5px;
+    color: #1A237E;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;  /* Make inputs take full width of form */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #2196F3;
+    border-radius: 5px;
+}
+
+#contact textarea {
+    height: 150px; /* Set height for the message textarea */
+}
+
+#contact button {
+    background-color: #2196F3;
     color: white;
+    padding: 12px 12px;  /* Larger padding for the button */
+    font-size: 1.1rem;
     border: none;
-    padding: 10px;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    width: 50%;  /* Make button take full width of the form */
+    max-width: 400px; /* Set a max-width for the button */
+    margin-top: 20px; /* Space between button and form */
 }
 
-button:hover {
-    background-color: #444;
+#contact button:hover {
+    background-color: #1976D2;
+}
+
+}
+
+/* Footer Section */
+footer {
+    background-color: #1A237E; /* Dark navy footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Social Media Links */
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-links li {
+    margin: 0 15px;
+}
+
+.social-links li a {
+    color: #1A237E;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-links li a:hover {
+    color: #2196F3; /* Change color on hover */
 }
